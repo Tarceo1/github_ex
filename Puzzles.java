@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
 //package puzzles;
 
 
@@ -25,6 +28,7 @@ F or each of the below method signatures, finish implementing the method
      */
     public static boolean sum28(int[] input) {
 <<<<<<< HEAD
+<<<<<<< HEAD
         int counter = 1;
         for(int i = 0; i < input.length; i++)
         {
@@ -34,6 +38,8 @@ F or each of the below method signatures, finish implementing the method
         
         return counter == 16;
 =======
+=======
+>>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
     int counter = 0;
        for(int i = 0; i < input.length; i++){
          if (input[i] ==2)
@@ -41,6 +47,9 @@ F or each of the below method signatures, finish implementing the method
        }
        
         return counter == 4;
+<<<<<<< HEAD
+>>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
+=======
 >>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
     }
 
