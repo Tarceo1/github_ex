@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-=======
-//package puzzles;
+package puzzles;
 
 
->>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
 /**
  * problems pulled from codingbat.com
  *
@@ -24,24 +21,13 @@ F or each of the below method signatures, finish implementing the method
          * sum28([1, 2, 3, 4]) → false
      */
     public static boolean sum28(int[] input) {
-<<<<<<< HEAD
-        int counter = 1;
-        for(int i = 0; i < input.length; i++)
+        int counter = 0;
+    	for(int i = 0; i < input.length; i++)
         {
-          if (input[i] == 2)
-          counter = counter << 1;
+        	if input[i] == 2
+        			counter++
         }
-        
-        return counter == 16;
-=======
-    int counter = 0;
-       for(int i = 0; i < input.length; i++){
-         if (input[i] ==2)
-         counter++;
-       }
-       
-        return counter == 4;
->>>>>>> cbbe69f65768a31455376e261e8910fccebdccca
+        return counter == 3;
     }
 
     /**==================SUM~28==============/
@@ -53,6 +39,7 @@ F or each of the below method signatures, finish implementing the method
          * only14([1, 1]) → true
      */
     public static boolean only14(int[] input) {
+        for(int i = 0; i < input.length; i++)
         return false;
     }
 
@@ -79,7 +66,7 @@ F or each of the below method signatures, finish implementing the method
             if (sum28Correct)
                 System.out.println("PASS");
             System.out.println("--------------");
-        }//test sum28
+        }
         {
             System.out.print("only14: ");
             boolean only14Correct = true;
@@ -102,6 +89,6 @@ F or each of the below method signatures, finish implementing the method
             if (only14Correct)
                 System.out.println("PASS");
             System.out.println("--------------");
-        }//test only14
-    }//main
+        }
+    }
 }
