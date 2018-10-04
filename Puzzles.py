@@ -37,18 +37,18 @@ def test(got, expected):
         prefix = ' OK '
     else:
         prefix = ' X '
-    print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
+    print(f' {prefix} got: {repr(got)} expected{repr(expected)}')
+    #print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
 
 # Provided main() calls the above functions with a ew winputs
 # using test() to check if each result is correct or not
 def main():
-    print 'sum28'
+    print ('sum28')
     test(sum28([2, 3, 2, 2, 4, 2]), True)
     test(sum28([1, 2, 3, 4]), False)
     test(sum28([2]), False)
-
-    print
-    print 'only14'
+    
+    print ('only14')
     test(only14([1, 4, 1, 4]), True)
     test(only14([1, 4, 2, 4]), True)
     test(only14([1, 1, 1, 5]), True)

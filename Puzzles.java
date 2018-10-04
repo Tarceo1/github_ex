@@ -21,8 +21,13 @@ F or each of the below method signatures, finish implementing the method
          * sum28([1, 2, 3, 4]) → false
      */
     public static boolean sum28(int[] input) {
-        //TODO
-        return false;
+        int counter = 0;
+    	for(int i = 0; i < input.length; i++)
+        {
+        	if input[i] == 2
+        			counter++
+        }
+        return counter == 3;
     }
 
     /**==================SUM~28==============/
@@ -34,7 +39,7 @@ F or each of the below method signatures, finish implementing the method
          * only14([1, 1]) → true
      */
     public static boolean only14(int[] input) {
-        //TODO
+        for(int i = 0; i < input.length; i++)
         return false;
     }
 
